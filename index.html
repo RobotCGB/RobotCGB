@@ -1,18 +1,50 @@
 <html>
+
 <style type="text/css">
-body {
-    color: red;
-    background-color: rebeccapurple;
+        body {
+            color: white;
+            background-image: url(wallpa.jpg);
+        }
+        .texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+        }
+        .centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+        h1 {text-align:center;color:white;}
+        div {text-align:center}
 </style>
-<H1>
-<img src="https://i.blogs.es/b47a9e/captura-de-pantalla-2018-07-03-a-las-13.04.56/1366_2000.png"
-width="1200" height="400" title="Un ser de luz encarnado" align="middle" > Hola buenas tardes </H1>
-<div><br> Que es un div? Realmente existe?</div>
-<div><br> <H3>Y puede ser mas grande?</H3></div>
-<div><br> <H1>CON ESTO DOMINARE TODAS LAS PAGINAS DE HTML</H1></div>
-<br><br><br><br><br>
-    <H2>Por cierto, si te lo preguntabas, si, he elegido los colores que mas dolor produzcan viendolos en contraste</H2>
+<head>
+    <h1>
+ <img src="IconoCosmere.png" width="100" height="100" align="left"> SEAN BIENVENIDOS AL <br> COSMERE
+    </h1>
+
+
+</head>
+<body>
+<img class="centrado" src="Esquirlaspng.png" >
+<script type="text/javascript" language="javascript">
+    function mostrar_imagen(id) {
+       img = document.getElementById(id);
+       img.innerHTML = '<img src="Adonalsium.png" class="centrado"/>';
+    }
+    
+    function ocultar_imagen(id) {
+        img = document.getElementById(id);
+        img.innerHTML = '';
+    }
+    </script>
+    
+    <input type="button" value="Ver a Adonalsium" onClick="javascript:mostrar_imagen('imagen')" />
+    <input type="button" value="Esconder a Adonalsium" onClick="javascript:ocultar_imagen('imagen')" />
+    <br />
+    <div id="imagen">
+    </div>
 </body>
-</style>
 </html>
